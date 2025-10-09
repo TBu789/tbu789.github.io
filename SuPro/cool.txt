@@ -1,1 +1,1 @@
-{"RedGamer6427A" : {"color":"<purple>", "suffix":"<purple>(Cool)"}}
+{"RedGamer6427A" : {"color":"<red>", "suffix":"<red>(OoO)"}}
