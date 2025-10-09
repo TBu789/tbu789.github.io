@@ -1,1 +1,1 @@
-{"RedGamer6427A" : {"color":"<rainbow>", "suffix":"<rainbow>(Cool)"},"TBu789" : {"color":"<purple>", "suffix":"<purple>(Skripter)"}}
+{"RedGamer6427A" : {"color":"<rainbow>", "suffix":"<rainbow>(Cool)"},"TBu789" : {"color":"<purple>", "suffix":"<purple>(Skripter)"}, "legoofost":{"color":"<yellow>", "suffix":"<yellow>(Kleinkind)"}}
