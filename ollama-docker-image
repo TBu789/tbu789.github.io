@@ -1,0 +1,59 @@
+FROM alpine:3.20
+
+LABEL author="SuProSupport" \
+      org.opencontainers.image.source="https://github.com/YOUR_REPO" \
+      description="Alpine-based Ollama Container for Pelican/Pterodactyl"
+
+# ----------------------------------------------------
+# 1. System dependencies
+# ----------------------------------------------------
+RUN apk update && apk add --no-cache \
+    bash \
+    curl \
+    wget \
+    fuse \
+    fuse3 \
+    fuse3-libs \
+    libc6-compat \
+    ca-certificates \
+    python3 \
+    py3-pip \
+    tzdata \
+    openssl \
+    git && \
+    update-ca-certificates
+
+# ----------------------------------------------------
+# 2. Install Ollama (GitHub Release binary)
+# ----------------------------------------------------
+RUN mkdir -p /opt/ollama
+
+RUN LATEST_URL=$(curl -s https://api.github.com/repos/ollama/ollama/releases/latest \
+    | grep browser_download_url \
+    | grep linux-amd64 \
+    | cut -d '"' -f 4) && \
+    echo "Downloading: $LATEST_URL" && \
+    wget -O /opt/ollama/ollama.tar.gz "$LATEST_URL" && \
+    cd /opt/ollama && \
+    tar -xzf ollama.tar.gz && \
+    rm ollama.tar.gz && \
+    chmod +x ollama
+
+# ----------------------------------------------------
+# 3. Configure env + folders
+# ----------------------------------------------------
+ENV OLLAMA_HOME=/var/lib/ollama
+RUN mkdir -p /var/lib/ollama/models
+
+# Make folders for Pelican server mount
+RUN mkdir -p /mnt/server
+
+# ----------------------------------------------------
+# 4. Expose Ollama Port (default 11434)
+# ----------------------------------------------------
+EXPOSE 11434
+
+# ----------------------------------------------------
+# 5. Startup command
+# ----------------------------------------------------
+CMD ["/opt/ollama/ollama", "serve"]
