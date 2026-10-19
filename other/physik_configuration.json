@@ -1,0 +1,116 @@
+{
+  "version": "1.0.0",
+  "requiredClientVersion": "1.0.0",
+  "lastUpdated": "2026-10-19",
+  "kapitel": {
+    "1": {
+      "kapitelId": 1,
+      "kapitelName": "Bewegungen untersuchen",
+      "lektionen": [
+        {
+          "id": 1,
+          "name": "Bewegungen beschreiben",
+          "typ": "knowledge",
+          "x": 10,
+          "y": 35
+        },
+        {
+          "id": 2,
+          "name": "Bewegungen beschreiben",
+          "typ": "task",
+          "x": 25,
+          "y": 45
+        },
+        {
+          "id": 3,
+          "name": "Bewegungen analysieren",
+          "typ": "task",
+          "x": 40,
+          "y": 58
+        },
+        {
+          "id": 4,
+          "name": "Zeit-Weg-Diagramme zeichnen",
+          "typ": "task",
+          "x": 55,
+          "y": 37
+        },
+        {
+          "id": 5,
+          "name": "Vertiefung der Konzepte",
+          "typ": "knowledge",
+          "x": 70,
+          "y": 40
+        },
+        {
+          "id": 6,
+          "name": "Abschlussprüfung",
+          "typ": "finale",
+          "x": 85,
+          "y": 58
+        }
+      ]
+    },
+    "2": {
+      "kapitelId": 2,
+      "kapitelName": "Kapitel 2",
+      "lektionen": [
+        {
+          "id": 1,
+          "name": "Einleitung",
+          "typ": "knowledge",
+          "x": 10,
+          "y": 35
+        },
+        {
+          "id": 2,
+          "name": "Aufgabe 1",
+          "typ": "task",
+          "x": 25,
+          "y": 45
+        },
+        {
+          "id": 3,
+          "name": "Abschlussprüfung",
+          "typ": "finale",
+          "x": 85,
+          "y": 58
+        }
+      ]
+    }
+  },
+  "aufgaben": {
+    "task-kapitel-1-lektion-2": {
+      "kapitelId": 1,
+      "lektionId": 2,
+      "aufgaben": [
+        {
+          "typ": "ankreuz",
+          "aufgabe": "Welche der folgenden Aussagen beschreiben eine Bewegung korrekt?",
+          "optionen": [
+            "Eine Bewegung ist die Ortsveränderung eines Körpers",
+            "Ein Bezugssystem ist immer notwendig zur Beschreibung einer Bewegung",
+            "Jeder Körper ist in Bewegung",
+            "Ein stillstehender Körper ist absolut stillgestanden"
+          ],
+          "richtigeAntwortenIndexe": [0, 1],
+          "tipp": {
+            "text": "Denke daran, dass eine Bewegung relativ zu einem Bezugssystem definiert ist."
+          }
+        },
+        {
+          "typ": "rechnen",
+          "aufgabe": "Ein Auto fährt 150 Kilometer in 2 Stunden. Wie schnell ist es durchschnittlich gefahren?",
+          "ergebnis": {
+            "wert": 75,
+            "einheit": "km/h",
+            "einheitenOptionen": ["m/s", "km/h", "cm/s"]
+          },
+          "tipp": {
+            "text": "Geschwindigkeit = Strecke / Zeit"
+          }
+        }
+      ]
+    }
+  }
+}
