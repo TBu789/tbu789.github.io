@@ -23,14 +23,14 @@
         },
         {
           "id": 3,
-          "name": "Bewegungen analysieren",
-          "typ": "task",
+          "name": "Geschwindigkeit berechnen",
+          "typ": "knowledge",
           "x": 40,
           "y": 58
         },
         {
           "id": 4,
-          "name": "Zeit-Weg-Diagramme zeichnen",
+          "name": "Geschwindigkeit berechnen",
           "typ": "task",
           "x": 55,
           "y": 37
@@ -38,7 +38,7 @@
         {
           "id": 5,
           "name": "Vertiefung der Konzepte",
-          "typ": "knowledge",
+          "typ": "task",
           "x": 70,
           "y": 40
         },
@@ -86,21 +86,55 @@
       "aufgaben": [
         {
           "typ": "ankreuz",
-          "aufgabe": "Welche der folgenden Aussagen beschreiben eine Bewegung korrekt?",
+          "aufgabe": "Welche der folgenden Aussagen beschreibt die gezeigte Bewegung am besten?",
           "optionen": [
-            "Eine Bewegung ist die Ortsveränderung eines Körpers",
-            "Ein Bezugssystem ist immer notwendig zur Beschreibung einer Bewegung",
-            "Jeder Körper ist in Bewegung",
-            "Ein stillstehender Körper ist absolut stillgestanden"
+            "Das Auto fährt gleichmäßig nach vorne. Hält an und fährt nach einer kleinen Pause wieder zurück.",
+            "Das Auto fährt gleichmäßig nach vorne. Hält an und fährt nach einer kleinen Pause wieder weiter",
+            "Das Auto fährt rückwärts gleichmäßig los und macht dann eine Pause.",
+            "Ein Auto fährt gleichmäßig nach vorne. Hält dann an, steht kurz und fährt rückwärts."
           ],
-          "richtigeAntwortenIndexe": [0, 1],
+          "richtigeAntwortenIndexe": [1],
           "tipp": {
-            "text": "Denke daran, dass eine Bewegung relativ zu einem Bezugssystem definiert ist."
+            "text": "Denke an das Bezugssystem."
           }
         },
         {
+          "typ": "ankreuz",
+          "aufgabe": "Welche der folgenden Aussagen beschreibt die gezeigte Bewegung am besten?",
+          "optionen": [
+            "Das Auto fährt gleichmäßig nach vorne. Hält an und fährt nach einer kleinen Pause wieder weiter.",
+            "Das Auto fährt gleichmäßig nach vorne. Dreht abrupt um und fährt bis zum Startpunkt zurück.",
+            "Das Auto fährt rückwärts gleichmäßig los und macht dann eine Pause. Danach fährt es wieder vorwärts.",
+            "Das Auto fährt gleichmäßig nach vorne. Dreht abrupt um und fährt ein Stück zurück. Dort verweilt es."
+          ],
+          "richtigeAntwortenIndexe": [3],
+          "tipp": {
+            "text": "Denke an das Bezugssystem."
+          }
+        },
+        {
+          "typ": "ankreuz",
+          "aufgabe": "Welche der folgenden Aussagen beschreibt die gezeigte Bewegung am besten?",
+          "optionen": [
+            "Das Auto fährt rückwärts gleichmäßig los und macht dann eine Pause. Danach fährt es wieder vorwärts.",
+            "Das Auto fährt gleichmäßig nach vorne. Dreht abrupt um und fährt bis zum Startpunkt zurück.",
+            "Das Auto fährt gleichmäßig nach vorne, macht eine Pause und fährt ein Stück rückwärts.",
+            "Das Auto fährt gleichmäßig nach vorne, macht eine Pause und fährt dann zum Startpunkt zurück."
+          ],
+          "richtigeAntwortenIndexe": [2],
+          "tipp": {
+            "text": "Denke an das Bezugssystem."
+          }
+        }
+      ]
+    },
+    "task-kapitel-1-lektion-4": {
+      "kapitelId": 1,
+      "lektionId": 4,
+      "aufgaben": [
+        {
           "typ": "rechnen",
-          "aufgabe": "Ein Auto fährt 150 Kilometer in 2 Stunden. Wie schnell ist es durchschnittlich gefahren?",
+          "aufgabe": "Ein Auto fährt 150 Kilometer in 2 Stunden. Wie schnell ist es durchschnittlich gefahren? (in km/h)",
           "ergebnis": {
             "wert": 75,
             "einheit": "km/h",
@@ -111,17 +145,159 @@
           }
         },
         {
+          "typ": "rechnen",
+          "aufgabe": "Ein Zug legt 300 Kilometer in 5 Stunden zurück. Wie schnell ist er durchschnittlich gefahren? (in km/h)",
+          "ergebnis": {
+            "wert": 60,
+            "einheit": "km/h",
+            "einheitenOptionen": ["m/s", "km/h", "cm/s"]
+          },
+          "tipp": {
+            "text": "Geschwindigkeit = Strecke / Zeit"
+          }
+        },
+        {
+          "typ": "rechnen",
+          "aufgabe": "Eine Person legt 30m in 6s geradlinig zurück. Wie groß ist ihre Durchschnittsgeschwindigkeit? (in m/s)",
+          "ergebnis": {
+            "wert": 5,
+            "einheit": "m/s",
+            "einheitenOptionen": ["m/s", "km/h", "cm/s"]
+          },
+          "tipp": {
+            "text": "Durchschnittsgeschwindigkeit = Strecke / Zeit"
+          }
+        },
+        {
+          "typ": "ankreuz",
+          "aufgabe": "Welche Größe kann bei einer Rückkehr zum Start null sein?",
+          "optionen": ["Zurückgelegte Strecke", "Ortsänderung", "Benötigte Zeit"],
+          "richtigeAntwortenIndexe": [1]
+        },
+        {
+          "typ": "rechnen",
+          "aufgabe": "Eine Person geht 20m nach Osten und 20m zurück. Die gesamte Zeit beträgt 20s. Wie lautet der mittlere Geschwindigkeitsbetrag.",
+          "ergebnis": {
+            "wert": 2,
+            "einheit": "m/s",
+            "einheitenOptionen": ["m/s", "km/h", "cm/s"]
+          },
+          "tipp": {
+            "text": "Durchschnittsgeschwindigkeit = Gesamtstrecke / Gesamtzeit, mittlerer Geschwindigkeitsbetrag = Betrag der einzelnen Geschwindigkeiten gemittelt"
+          }
+        }
+      ]
+    },
+    "task-kapitel-1-lektion-5": {
+      "kapitelId": 1,
+      "lektionId": 5,
+      "aufgaben": [
+        {
           "typ": "text",
-          "aufgabe": "Erkläre in 2-3 Sätzen, warum ein Bezugssystem notwendig ist, um Bewegungen zu beschreiben.",
-          "musterloesung": "Bewegung ist relativ. Ein Körper ist bewegt oder stillgestanden je nach Bezugssystem. Ohne Bezugssystem kann man nicht sagen, ob sich ein Objekt bewegt.",
+          "aufgabe": "Bei einer 5-m-Messstrecke schwanken die Laufzeiten stark. Wie kannst du die Messung verbessern?",
+          "musterloesung": "Längere Strecke, mehrfach messen, möglichst gleichmäßiges Tempo und Video oder Lichtschranken verwenden. Eine längere Messzeit senkt den relativen Einfluss der Reaktionszeit.",
           "hinweise": [
-            "Das Kernkonzept ist: Bewegung ist relativ zu einem Bezugssystem",
-            "Erkläre, dass derselbe Körper in verschiedenen Systemen unterschiedlich erscheinen kann",
-            "Gib ein Beispiel (z.B. Auto im Zug)"
+            "Skizziere die Situation und benenne die verwendeten physikalischen Größen."
           ],
           "tipp": {
-            "text": "Ein Auto im Zug: relativ zum Zug bewegt, aber relativ zur Straße nicht."
+            "text": "Skizziere die Situation und benenne die verwendeten physikalischen Größen."
           }
+        },
+        {
+          "typ": "ankreuz",
+          "aufgabe": "Welche Aktionen muss man ausführen, um den Geschwindigkeitsbetrag zu messen?",
+          "optionen": [
+            "Strecke messen",
+            "Stoppuhr verwenden",
+            "Video oder Lichtschranken verwenden",
+            "Raumtemperatur messen"
+          ],
+          "richtigeAntwortenIndexe": [0, 1, 2]
+        },
+        {
+          "typ": "rechnen",
+          "aufgabe": "Eine Person legt 100m in 10s zurück. Wie groß ist ihre Durchschnittsgeschwindigkeit? (in m/s)",
+          "ergebnis": {
+            "wert": 10,
+            "einheit": "m/s",
+            "einheitenOptionen": ["m/s", "km/h", "cm/s"]
+          },
+          "tipp": {
+            "text": "Durchschnittsgeschwindigkeit = Strecke / Zeit"
+          }
+        },
+        {
+          "typ": "ankreuz",
+          "aufgabe": "Bei dem Geschwindigkeitsbetrag ist es nicht wichtig, die Richtung der Bewegung zu berücksichtigen. Wahr oder Falsch?",
+          "optionen": [
+            "Wahr",
+            "Falsch"
+          ],
+          "richtigeAntwortenIndexe": [0]
+        }
+      ]
+    },
+    "task-kapitel-1-lektion-6": {
+      "kapitelId": 1,
+      "lektionId": 6,
+      "aufgaben": [
+        {
+          "typ": "ankreuz",
+          "aufgabe": "Welche der folgenden Aussagen beschreibt die gezeigte Bewegung am besten?",
+          "optionen": [
+            "Das Auto fährt gleichmäßig nach vorne. Hält an und fährt nach einer kleinen Pause wieder weiter.",
+            "Das Auto fährt gleichmäßig nach vorne. Dreht abrupt um und fährt bis zum Startpunkt zurück.",
+            "Das Auto fährt rückwärts gleichmäßig los und macht dann eine Pause. Danach fährt es wieder vorwärts.",
+            "Das Auto fährt gleichmäßig nach vorne. Dreht abrupt um und fährt ein Stück zurück. Dort verweilt es."
+          ],
+          "richtigeAntwortenIndexe": [3]
+        },
+        {
+          "typ": "rechnen",
+          "aufgabe": "Ein Auto fährt 100 m in 5 s. Wie groß ist seine Durchschnittsgeschwindigkeit? (in m/s)",
+          "ergebnis": {
+            "wert": 20,
+            "einheit": "m/s",
+            "einheitenOptionen": ["m/s", "km/h", "cm/s"]
+          }
+        },
+        {
+          "typ": "rechnen",
+          "aufgabe": "Ein ICE 4 fährt auf der Schnellfahrstrecke zwischen Frankfurt und Köln. Für einen 144 Kilometer langen Streckenabschnitt benötigt der Zug genau 36 Minuten, ohne zwischendurch anzuhalten. Berechne den Geschwindigkeitsbetrag des ICEs in Kilometern pro Stunde (km/h).",
+          "ergebnis": {
+            "wert": 240,
+            "einheit": "km/h",
+            "einheitenOptionen": ["m/s", "km/h", "cm/s"]
+          }
+        },
+        {
+        "typ": "ankreuz",
+        "aufgabe": "Was zeigt der Tachometer (Tacho) in einem Auto genau in diesem Moment an?",
+        "optionen": [
+          "Die Durchschnittsgeschwindigkeit der gesamten Fahrt.",
+          "Den aktuellen Geschwindigkeitsbetrag (die Momentangeschwindigkeit).",
+          "Die Fahrtrichtung, in die das Auto gerade steuert.",
+          "Die gesamte Strecke, die das Auto bisher gefahren ist."
+          ],
+          "richtigeAntwortenIndexe": [1]
+        },
+        {
+          "typ": "rechnen",
+          "aufgabe": "Ein Auto fährt 150 km in 3 Stunden. Berechne die Durchschnittsgeschwindigkeit in km/h.",
+          "ergebnis": {
+            "wert": 50,
+            "einheit": "km/h",
+            "einheitenOptionen": ["m/s", "km/h", "cm/s"]
+          }
+        },
+        {
+          "typ": "ankreuz",
+          "aufgabe": "Bei dem Geschwindigkeitsbetrag ist es wichtig, die Richtung der Bewegung zu berücksichtigen. Wahr oder Falsch?",
+          "optionen": [
+            "Wahr",
+            "Falsch"
+          ],
+          "richtigeAntwortenIndexe": [1]
         }
       ]
     }
