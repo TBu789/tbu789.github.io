@@ -109,6 +109,19 @@
           "tipp": {
             "text": "Geschwindigkeit = Strecke / Zeit"
           }
+        },
+        {
+          "typ": "text",
+          "aufgabe": "Erkläre in 2-3 Sätzen, warum ein Bezugssystem notwendig ist, um Bewegungen zu beschreiben.",
+          "musterloesung": "Bewegung ist relativ. Ein Körper ist bewegt oder stillgestanden je nach Bezugssystem. Ohne Bezugssystem kann man nicht sagen, ob sich ein Objekt bewegt.",
+          "hinweise": [
+            "Das Kernkonzept ist: Bewegung ist relativ zu einem Bezugssystem",
+            "Erkläre, dass derselbe Körper in verschiedenen Systemen unterschiedlich erscheinen kann",
+            "Gib ein Beispiel (z.B. Auto im Zug)"
+          ],
+          "tipp": {
+            "text": "Ein Auto im Zug: relativ zum Zug bewegt, aber relativ zur Straße nicht."
+          }
         }
       ]
     }
